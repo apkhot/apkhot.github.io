@@ -5,3 +5,15 @@ body {
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
 }
+
+header {
+    background-color: #222; /* Slightly darker gray for the header */
+    padding: 10px; /* Add some padding for spacing */
+    text-align: center; /* Center-align the text */
+    margin-bottom: 20px; /* Add space between header and main */
+}
+
+/* Style the main content */
+main {
+    padding: 20px; /* Add padding around the main content */
+}

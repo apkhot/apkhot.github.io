@@ -9,7 +9,7 @@ body {
 header {
     background-color: #222; /* Slightly darker gray for the header */
     padding: 10px; /* Add some padding for spacing */
-    text-align: left; /* Center-align the text */
+    text-align: center; /* Center-align the text */
     margin-bottom: 20px; /* Add space between header and main */
     font-size: 10vh;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;

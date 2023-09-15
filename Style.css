@@ -1,1 +1,7 @@
-
+body {
+    background-color: #333; /* Dark gray color */
+    color: #fff; /* Text color (white) */
+    font-family: Arial, sans-serif; /* Specify your preferred font */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}

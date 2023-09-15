@@ -12,7 +12,7 @@ h1 {
     text-align: left; /* Center-align the text */
     margin-bottom: 20px; /* Add space between header and main */
     font-size: 4vh;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* Style the main content */

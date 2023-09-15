@@ -6,7 +6,7 @@ body {
     padding: 0; /* Remove default padding */
 }
 
-header {
+h1 {
     background-color: #222; /* Slightly darker gray for the header */
     padding: 10px; /* Add some padding for spacing */
     text-align: left; /* Center-align the text */

@@ -10,7 +10,7 @@ header {
     background-color: #222; /* Slightly darker gray for the header */
     padding: 10px; /* Add some padding for spacing */
     text-align: right; /* Center-align the text */
-    margin-bottom: 10px; /* Add space between header and main */
+    margin-bottom: 20px; /* Add space between header and main */
 }
 
 /* Style the main content */

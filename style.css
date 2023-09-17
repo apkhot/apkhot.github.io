@@ -40,11 +40,12 @@ body {
 }
 
 #education {
-    margin-top: 12rem;
+    margin-top: 7rem;
+    margin-bottom: 5rem;
 }
 
 #education p{
-    font-size: 21px;
+    font-size: 17px;
 }
 
 .btn-custom {
@@ -83,14 +84,15 @@ a:hover {
 section h1 {
     border-bottom: 1px solid #b0b0b0;
     padding-bottom: 12px;
-    width: 59rem;
+    width: 49rem;
 }
 
 .container-margin .header-name {
-    font-size: 58px;
+    font-size: 48px;
     margin-bottom: 2rem;
     border-bottom: 2px solid white;
     padding-bottom: 12px;
+    /* width: 60rem; */
 }
 
 .container-margin p {
@@ -99,16 +101,24 @@ section h1 {
     letter-spacing: 1.5px;
     color: #e4e4e4;
     font-size: 17px;
+    text-align: justify;
+    word-spacing: 0px;
 }
 
-.quantum-img, .apk-img {
+.apk-img {
     /* border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ; */
-    border-radius: 90px;
-    height: 25rem;
+    border-radius: 100%;
+    height: 23rem;
     margin-left: 12rem;
-    width: 25rem;
-    margin-bottom: 25px;
+    width: 23rem;
+    margin-top: 5rem;
 }
+
+/* .quantum-img {
+    margin-left: 12rem;
+    margin-top: 5rem;
+    width: 32rem;
+} */
 
 #menubar {
     /* overflow: hidden; */
@@ -121,10 +131,10 @@ section h1 {
     /* position: sticky; */
     right: 68px;
     /* top: 322px; */
-    width: 79rem;
+    width: 59rem;
     text-align: center;
     /* gap: 10rem; */
-    padding: 20px 26px;
+    padding: 15px 26px;
     background: black;
     z-index: 20;
     display: flex;
@@ -132,19 +142,21 @@ section h1 {
     /* margin-right: 68rem; */
     margin-top: 2rem;
     justify-content: space-around;
+    align-items: center;
 
 }
 
 .sticky {
     position: fixed;
     top: 0;
-    right: 8.2rem;
+    right: 28.2rem;
     /* width: 100%; */
     margin-top: 5px;
   }
 
 .menu a {
-    font-size: 20px;
+    font-size: 13px;
+    letter-spacing: 1.5px;
 }
 
 #research-interest .subtitle {
@@ -152,7 +164,7 @@ section h1 {
 }
 
 #research-interest li {
-    font-size: 20px;
+    font-size: 17px;
 }
 
 ul {
@@ -170,7 +182,7 @@ ul {
 }
 
 .section-margin {
-    margin-top: 12rem;
+    margin-top: 5rem;
 }
 
 .research-list {
@@ -186,12 +198,12 @@ ul {
 }
 
 #rpp ul li a {
-    font-size: 20px;
+    font-size: 17px;
     color: rgb(5, 222, 241);
 }
 
 #rpp ul li {
-    font-size: 20px;
+    font-size: 17px;
 }
 
 #rpp ul li a:hover {
@@ -213,15 +225,16 @@ ul li {
     font-size: 29px;
 }
 
-.research-header h1{
-    font-size: 2px;
+.research-header{
+    font-size: 30px;
 }
 
 #projects li, #code li {
-    font-size: 20px;
-    padding: 12px;
+    font-size: 17px;
+    padding: 5px;
     letter-spacing: 1.5px;
     color: white;
+    position: relative;
 }
 
 #projects li a, #code li a{
@@ -234,12 +247,17 @@ ul li {
 
 #projects .project-link {
     color: #00acee;
-    margin-left: 3rem;
+    margin-left: 2.2rem;
+    font-size: 20px;
 }
 
 #projects .btn {
     background-color: rgb(5, 222, 241);
     color: white;
+}
+
+#projects li h4, #code .code-link {
+    font-size: 20px;
 }
 
 #code {
@@ -259,7 +277,7 @@ ul li {
     border: 1px solid #565656;
     padding: 9px 20px;
     border-radius: 30px;
-    margin-bottom: 53px;
+    margin-bottom: 17px;
     display: inline-flex;
     align-items: center;
     letter-spacing: 10px;
@@ -267,10 +285,10 @@ ul li {
 
 .quantum-img {
     position: absolute;
-    height: 30rem;
-    width: 20rem;
-    left: 50rem;
-    top: 80rem;
+    height: 35rem;
+    width: 25rem;
+    left: 65rem;
+    top: 60rem;
 }
 
 #about-me {
@@ -324,7 +342,7 @@ blockquote {
 }
 
 .hidden {
-    opacity: 0;
+     opacity: 0;
     /* filter: blur(5px); */
     transform: translateY(60%);
     transition: all 1s;

@@ -232,7 +232,7 @@ ul li {
 #projects li, #code li {
     font-size: 17px;
     padding: 5px;
-    letter-spacing: 1.5px;
+    /*letter-spacing: 1.5px;*/
     color: white;
     position: relative;
 }

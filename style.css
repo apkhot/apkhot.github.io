@@ -230,7 +230,7 @@ ul li {
 }
 
 #projects li, #code li {
-    font-size: 17px;
+    font-size: 16px;
     padding: 5px;
     /*letter-spacing: 1.5px;*/
     color: white;
@@ -257,7 +257,7 @@ ul li {
 }
 
 #projects li h4, #code .code-link {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 #code {

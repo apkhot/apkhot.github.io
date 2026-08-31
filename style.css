@@ -376,24 +376,9 @@ blockquote {
     margin-bottom: 2.5rem;
 }
 
-.research-feature .title-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    flex-wrap: wrap;
-    column-gap: 1.5rem;
-    margin-bottom: 0.6rem;
-}
-
-.research-feature .title-row h4 {
+.research-feature h4 {
     font-size: 20px;
-    margin: 0;
-}
-
-.research-feature .title-row .org {
-    font-size: 14px;
-    color: #b0b0b0;
-    white-space: nowrap;
+    margin-bottom: 0.8rem;
 }
 
 .research-text {
@@ -414,9 +399,4 @@ blockquote {
     max-width: 100%;
     border-radius: 12px;
     border: 1px solid #333;
-}
-
-.probe-img {
-    max-width: 24rem;
-    margin-top: 1rem;
 }

@@ -182,7 +182,7 @@ ul {
 }
 
 .section-margin {
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 
 .research-list {
@@ -288,7 +288,7 @@ ul li {
     height: 35rem;
     width: 25rem;
     left: 65rem;
-    top: 60rem;
+    top: 10rem;
 }
 
 #about-me {
@@ -302,7 +302,7 @@ blockquote {
 }
 
 .intro-header {
-    margin-top: 5rem;
+    margin-top: 3rem;
     margin-bottom: 1rem;
     border-bottom: 1px solid white;
     padding-bottom: 12px;
@@ -352,3 +352,71 @@ blockquote {
     transform: translateY(0);
     opacity: 1;
 }*/
+
+/* ---- Research Presentation section (id="research-presentation") ---- */
+
+#research-presentation {
+    margin-top: 3rem;
+}
+
+#research-presentation .subtitle {
+    margin-bottom: 12px;
+}
+
+#research-presentation p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+#research-presentation a {
+    color: rgb(5, 222, 241);
+}
+
+.research-feature {
+    margin-bottom: 2.5rem;
+}
+
+.research-feature .title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    column-gap: 1.5rem;
+    margin-bottom: 0.6rem;
+}
+
+.research-feature .title-row h4 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.research-feature .title-row .org {
+    font-size: 14px;
+    color: #b0b0b0;
+    white-space: nowrap;
+}
+
+.research-text {
+    max-width: 36rem;
+}
+
+.research-text ul {
+    margin-top: 0.5rem;
+}
+
+.research-text li {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+}
+
+.research-img {
+    max-width: 100%;
+    border-radius: 12px;
+    border: 1px solid #333;
+}
+
+.probe-img {
+    max-width: 24rem;
+    margin-top: 1rem;
+}

@@ -9,10 +9,6 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <script defer src="main.js"></script>
-    <style>
-        .research-feature { margin-bottom: 2.5rem; }
-        .research-img { max-width: 100%; border: 1px solid #ddd; }
-    </style>
 </head>
 
 <body>
@@ -23,10 +19,10 @@
             <p>Akhilesh Khot holds a Master's degree in Electrical Engineering (Microelectronics) from
                 Delft University of Technology (TU Delft), the Netherlands, and a Bachelor's degree in
                 Electronics and Telecommunication Engineering from Savitribai Phule Pune University (SPPU),
-                India. His work centres on RF electronics and the design and implementation of readout and
-                control electronics for superconducting qubits, and he recently completed his Master's thesis
-                on this topic. He enjoys building electronics designs from the ground up, from circuit
-                concept to working hardware. Outside the lab, he likes playing chess and cricket.
+                India. His research interests include RF electronics and the design and implementation of
+                readout and control electronics for superconducting qubits, and he recently completed his
+                Master's thesis in this area. He enjoys building electronics designs from the ground up,
+                from circuit concept to working hardware. Outside the lab, he likes playing chess and cricket.
             </p>
 
             <a id="btn-yt" class="btn btn-custom"
@@ -102,56 +98,64 @@
                     <h4 class="subtitle">Presentation</h4>
                     <h1 class="research-header active">Research Presentation</h1>
 
-                    <div class="row align-items-center research-feature">
-                        <div class="col-md-8">
+                    <div class="research-feature">
+                        <div class="title-row">
                             <h4>On-Chip Through-the-Wall RADAR</h4>
-                            <p>Developed an end-to-end embedded through-the-wall RADAR front-end
-                                (<a href="https://ece.iisc.ac.in/~arsl/index.htm">Analog and RF Systems Lab,
-                                    Indian Institute of Science, Bengaluru</a>), including the mixed-signal
-                                PCB integrating the RF front-end, analog baseband, and digital control, and a
-                                hybrid FMCW&ndash;CW waveform for clock-free chirp demarcation and phase-coherent
-                                Doppler extraction.</p>
-                            <ul>
-                                <li>E. Easha, A. P. Khot and G. Banerjee, &ldquo;Hybrid Waveform Based Chirp
-                                    Demarcation in FMCW Radar Systems,&rdquo; <i>2024 IEEE Asia-Pacific Microwave
-                                        Conference (APMC)</i>, Bali, Indonesia, 2024, pp. 934-936, doi:
-                                    <a href="https://doi.org/10.1109/APMC60911.2024.10867781">10.1109/APMC60911.2024.10867781</a>
-                                    [<a href="https://doi.org/10.1109/APMC60911.2024.10867781">IEEE Xplore</a>]
-                                </li>
-                                <li>E. Easha and G. Banerjee, &ldquo;Hybrid Waveform-Based Efficient Chirp
-                                    Demarcation and Clock-Free Synchronization in FMCW Radar Systems,&rdquo;
-                                    <i>IEEE Transactions on Microwave Theory and Techniques</i>, vol. 73, no. 12,
-                                    pp. 9761-9772, Dec. 2025, doi:
-                                    <a href="https://doi.org/10.1109/TMTT.2025.3605228">10.1109/TMTT.2025.3605228</a>
-                                    [<a href="https://doi.org/10.1109/TMTT.2025.3605228">IEEE Xplore</a>]
-                                </li>
-                            </ul>
+                            <span class="org"><a href="https://ece.iisc.ac.in/~arsl/index.htm">Analog and RF Systems Lab, IISc Bengaluru</a></span>
                         </div>
-                        <div class="col-md-4 text-center">
-                            <img src="images/roc-board.png" alt="Radar-on-chip evaluation board used for the through-the-wall RADAR"
-                                class="img-fluid rounded research-img">
+                        <div class="row align-items-center">
+                            <div class="col-md-8 research-text">
+                                <p>Built the mixed-signal PCB for a chip-scale through-the-wall RADAR &ndash;
+                                    smaller than a grain of rice &ndash; bringing the RF front-end, analog
+                                    baseband, and STM32-based digital control together on one board: PA/LNA
+                                    matching, attenuators, and bias circuitry on the RF side; IF amplification
+                                    on the analog side; and GPIO-driven chirp generation with DMA-based
+                                    acquisition on the digital side. Also contributed to a hybrid FMCW&ndash;CW
+                                    waveform that lets the radar demarcate chirp boundaries and stay
+                                    phase-coherent without an external clock, published in:</p>
+                                <ul>
+                                    <li>E. Easha, A. P. Khot and G. Banerjee, &ldquo;Hybrid Waveform Based Chirp
+                                        Demarcation in FMCW Radar Systems,&rdquo; <i>2024 IEEE Asia-Pacific
+                                            Microwave Conference (APMC)</i>, Bali, Indonesia, 2024, pp. 934-936,
+                                        doi: <a href="https://doi.org/10.1109/APMC60911.2024.10867781">10.1109/APMC60911.2024.10867781</a>
+                                        [<a href="https://doi.org/10.1109/APMC60911.2024.10867781">IEEE Xplore</a>]
+                                    </li>
+                                    <li>E. Easha and G. Banerjee, &ldquo;Hybrid Waveform-Based Efficient Chirp
+                                        Demarcation and Clock-Free Synchronization in FMCW Radar Systems,&rdquo;
+                                        <i>IEEE Transactions on Microwave Theory and Techniques</i>, vol. 73,
+                                        no. 12, pp. 9761-9772, Dec. 2025, doi:
+                                        <a href="https://doi.org/10.1109/TMTT.2025.3605228">10.1109/TMTT.2025.3605228</a>
+                                        [<a href="https://doi.org/10.1109/TMTT.2025.3605228">IEEE Xplore</a>]
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <img src="images/roc-board.png" alt="Radar-on-chip evaluation board used for the through-the-wall RADAR"
+                                    class="research-img">
+                            </div>
                         </div>
                     </div>
 
-                    <div class="row align-items-center research-feature">
-                        <div class="col-md-12">
+                    <div class="research-feature">
+                        <div class="title-row">
                             <h4>Traceable On-Wafer Sub-Terahertz Characterization</h4>
-                            <p>On-wafer sub-terahertz characterization with accuracy evaluation, carried out
-                                with VSL (the Dutch National Metrology Institute), covering probe-offset error
-                                modelling, EM simulation, and traceable S-parameter calibration up to 330 GHz.
+                            <span class="org">VSL &ndash; Dutch National Metrology Institute</span>
+                        </div>
+                        <div class="research-text">
+                            <p>Modelled and validated an R-matrix probe-offset error correction for on-wafer
+                                S-parameter measurements up to 330 GHz. Simulated calibration structures in
+                                ADS Momentum and CST, verified the correction against on-wafer VNA
+                                measurements, and extended it to an electro-optic modulator device. Also
+                                extracted substrate permittivity and loss tangent to support traceable
+                                S-parameter calibration across three frequency bands up to 110 GHz.
                                 [<a href="https://docs.google.com/presentation/d/1dDFQng6Fa7a9WNMtbCGZsB37N9oJlEhU/edit?usp=sharing&ouid=106643986161090956089&rtpof=true&sd=true">link</a>]
                             </p>
                         </div>
+                        <div class="text-center">
+                            <img src="images/probe-station.png" alt="On-wafer probe station used for the sub-terahertz characterization"
+                                class="research-img probe-img">
+                        </div>
                     </div>
-
-                    <ul>
-                        <li>Ramanujan-sum expansions for finite duration (FIR) sequences [<a
-                                href="https://docs.google.com/presentation/d/1ek4CKYxJiVVrJU8OkAuw4y3jXhUhMuvUcfj0Q7VZCc0/edit#slide=id.ge15dd6a870_0_48">link</a>]
-                        </li>
-                        <li>Single channel microphone localization [<a
-                                href="https://drive.google.com/file/d/1v3izcFVgu_H1Ly6ADG3mLdYl9QtC_V_s/view?usp=sharing">link</a>]
-                        </li>
-                    </ul>
                 </section>
 
                 <section class="section-margin hidden" id="projects">

@@ -19,10 +19,10 @@
             <p>Akhilesh Khot holds a Master's degree in Electrical Engineering (Microelectronics) from
                 Delft University of Technology (TU Delft), the Netherlands, and a Bachelor's degree in
                 Electronics and Telecommunication Engineering from Savitribai Phule Pune University (SPPU),
-                India. His research interests include RF electronics and the design and implementation of
-                readout and control electronics for superconducting qubits, and he recently completed his
-                Master's thesis in this area. He enjoys building electronics designs from the ground up,
-                from circuit concept to working hardware. Outside the lab, he likes playing chess and cricket.
+                India. His research interests include RF electronics and the design of superconducting
+                qubits. He recently completed his Master's thesis on the characterization of on-wafer
+                devices. He enjoys building electronics designs from the ground up, from circuit concept to
+                working hardware. Outside the lab, he likes playing chess and cricket.
             </p>
 
             <a id="btn-yt" class="btn btn-custom"
@@ -99,20 +99,22 @@
                     <h1 class="research-header active">Research Presentation</h1>
 
                     <div class="research-feature">
-                        <div class="title-row">
-                            <h4>On-Chip Through-the-Wall RADAR</h4>
-                            <span class="org"><a href="https://ece.iisc.ac.in/~arsl/index.htm">Analog and RF Systems Lab, IISc Bengaluru</a></span>
-                        </div>
-                        <div class="row align-items-center">
+                        <h4>On-Chip Through-the-Wall RADAR (<a href="https://ece.iisc.ac.in/~arsl/index.htm">Analog and RF Systems Lab, IISc Bengaluru</a>)</h4>
+                        <div class="row align-items-start">
                             <div class="col-md-8 research-text">
-                                <p>Built the mixed-signal PCB for a chip-scale through-the-wall RADAR &ndash;
-                                    smaller than a grain of rice &ndash; bringing the RF front-end, analog
-                                    baseband, and STM32-based digital control together on one board: PA/LNA
-                                    matching, attenuators, and bias circuitry on the RF side; IF amplification
-                                    on the analog side; and GPIO-driven chirp generation with DMA-based
-                                    acquisition on the digital side. Also contributed to a hybrid FMCW&ndash;CW
-                                    waveform that lets the radar demarcate chirp boundaries and stay
-                                    phase-coherent without an external clock, published in:</p>
+                                <p>Phase coherence across the transmitter, receiver and analog to digital
+                                    converter is essential for accurate Doppler extraction in FMCW radar.
+                                    Radar systems built from discrete commercial off the shelf components
+                                    often lack a shared clock. This leads to phase errors and reduced Doppler
+                                    accuracy. Existing solutions correct for this using additional GPIO lines
+                                    and ADC channels, which increases hardware complexity. This project
+                                    proposed a hybrid waveform that combines an FMCW segment with a CW segment
+                                    within each chirp. A short CW segment produces a constant baseband
+                                    component that marks each chirp boundary internally, without an external
+                                    trigger or shared clock. The approach was validated on a compact radar on
+                                    chip platform. It enabled precise construction of the two dimensional
+                                    baseband matrix and preserved Doppler fidelity while reducing hardware
+                                    overhead. The work was published in:</p>
                                 <ul>
                                     <li>E. Easha, A. P. Khot and G. Banerjee, &ldquo;Hybrid Waveform Based Chirp
                                         Demarcation in FMCW Radar Systems,&rdquo; <i>2024 IEEE Asia-Pacific
@@ -137,23 +139,30 @@
                     </div>
 
                     <div class="research-feature">
-                        <div class="title-row">
-                            <h4>Traceable On-Wafer Sub-Terahertz Characterization</h4>
-                            <span class="org">VSL &ndash; Dutch National Metrology Institute</span>
-                        </div>
-                        <div class="research-text">
-                            <p>Modelled and validated an R-matrix probe-offset error correction for on-wafer
-                                S-parameter measurements up to 330 GHz. Simulated calibration structures in
-                                ADS Momentum and CST, verified the correction against on-wafer VNA
-                                measurements, and extended it to an electro-optic modulator device. Also
-                                extracted substrate permittivity and loss tangent to support traceable
-                                S-parameter calibration across three frequency bands up to 110 GHz.
-                                [<a href="https://docs.google.com/presentation/d/1dDFQng6Fa7a9WNMtbCGZsB37N9oJlEhU/edit?usp=sharing&ouid=106643986161090956089&rtpof=true&sd=true">link</a>]
-                            </p>
-                        </div>
-                        <div class="text-center">
-                            <img src="images/probe-station.png" alt="On-wafer probe station used for the sub-terahertz characterization"
-                                class="research-img probe-img">
+                        <h4>Traceable On-Wafer Sub-Terahertz Characterization (VSL, Dutch National Metrology Institute)</h4>
+                        <div class="row align-items-start">
+                            <div class="col-md-8 research-text">
+                                <p>Traceability is essential for credible on-wafer S-parameter measurements at
+                                    millimeter and sub-terahertz frequencies. A key source of error in these
+                                    measurements is the offset between the electrical and mechanical reference
+                                    planes of the microwave probe. This project addressed that error through
+                                    an R-matrix probe offset correction, developed for on-wafer measurements
+                                    up to 330 GHz. The model was verified against full wave electromagnetic
+                                    simulations of the calibration standards in ADS Momentum and CST, and
+                                    against on-wafer vector network analyzer measurements. The correction was
+                                    also extended to an electro-optic modulator device to test its validity
+                                    beyond standard calibration structures. In parallel, the substrate
+                                    permittivity and loss tangent were extracted from the calibrated
+                                    measurements to support a traceable calibration chain across three
+                                    frequency bands up to 110 GHz, consistent with established metrology
+                                    practice for on-wafer characterization.
+                                    [<a href="https://docs.google.com/presentation/d/1dDFQng6Fa7a9WNMtbCGZsB37N9oJlEhU/edit?usp=sharing&ouid=106643986161090956089&rtpof=true&sd=true">link</a>]
+                                </p>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <img src="images/probe-station.png" alt="On-wafer probe station used for the sub-terahertz characterization"
+                                    class="research-img">
+                            </div>
                         </div>
                     </div>
                 </section>

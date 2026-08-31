@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akhilesh Khot &mdash; CV</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .cv-wrap { max-width: 850px; margin: 0 auto; padding: 3rem 1rem 5rem; }
+        .cv-name { font-weight: 700; margin-bottom: 0.1rem; }
+        .cv-contact a { margin-right: 0.75rem; }
+        .cv-section-title {
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            font-size: 1rem;
+            font-weight: 700;
+            border-bottom: 1px solid #333;
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+            padding-bottom: 0.2rem;
+        }
+        .cv-entry { margin-bottom: 1rem; }
+        .cv-entry-header { display: flex; justify-content: space-between; flex-wrap: wrap; font-weight: 600; }
+        .cv-entry-subheader { display: flex; justify-content: space-between; flex-wrap: wrap; font-style: italic; font-size: 0.95rem; color: #444; }
+        .cv-entry ul { margin-top: 0.35rem; padding-left: 1.2rem; }
+        .cv-entry li { margin-bottom: 0.3rem; }
+        .cv-back { margin-bottom: 1.5rem; display: inline-block; }
+        @media print {
+            .cv-back { display: none; }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cv-wrap">
+        <a class="cv-back" href="index.html">&larr; Back to site</a>
+
+        <div class="text-center">
+            <h1 class="cv-name">Akhilesh Khot</h1>
+            <p class="cv-contact">
+                <a href="mailto:akhileshskhot@gmail.com">akhileshskhot@gmail.com</a>
+                <a href="https://apkhot.github.io/">apkhot.github.io</a>
+                <a href="https://github.com/apkhot">github.com/apkhot</a>
+            </p>
+        </div>
+
+        <h2 class="cv-section-title">Education</h2>
+        <div class="cv-entry">
+            <div class="cv-entry-header"><span>Delft University of Technology</span><span>Sep. 2024 &ndash; Aug. 2026</span></div>
+            <div class="cv-entry-subheader"><span>Master of Science in Electrical Engineering (Microelectronics)</span><span>Delft, Netherlands</span></div>
+            <p>Thesis grade: 8.5.</p>
+        </div>
+        <div class="cv-entry">
+            <div class="cv-entry-header"><span>Savitribai Phule Pune University</span><span>Sep. 2018 &ndash; Apr. 2022</span></div>
+            <div class="cv-entry-subheader"><span>Bachelor of Engineering in Electronics and Telecommunication</span><span>Pune, India</span></div>
+            <p>Secured First Class with Distinction.</p>
+        </div>
+
+        <h2 class="cv-section-title">Experience</h2>
+        <div class="cv-entry">
+            <div class="cv-entry-header"><span><a href="https://ece.iisc.ac.in/~arsl/index.htm">Analog and RF Systems Lab</a> &ndash; Indian Institute of Science, Bangalore</span><span>May 2023 &ndash; Jul. 2024</span></div>
+            <div class="cv-entry-subheader"><span>Project Associate | Through-the-wall RADAR</span><span>Bangalore, India</span></div>
+            <ul>
+                <li>Designed and laid out a multi-layer mixed-signal PCB integrating the RF front-end, analog baseband, and digital control of a chip-scale through-the-wall RADAR (smaller than a grain of rice), addressing impedance matching, signal integrity, isolation, and grounding between the RF, analog, and digital domains.</li>
+                <li>Designed RF-section circuitry including power amplifier and LNA matching networks, attenuator networks, and bias current mirrors.</li>
+                <li>Designed the analog baseband section (IF/baseband amplifiers) to condition the mixed-down received signal prior to digitization.</li>
+                <li>Designed the digital control section around an STM32 MCU with on-chip flash memory, and its supporting power and clock circuitry, configuring GPIO-driven chirp generation (triangular, sawtooth, up-/down-chirp) and DMA-based ADC acquisition for the transmit/receive chain.</li>
+                <li>Interfaced the STM32 with a Raspberry Pi over SPI and UART and built Python-based automation scripts for real-time data acquisition and control between the RADAR front-end and the host.</li>
+            </ul>
+        </div>
+        <div class="cv-entry">
+            <div class="cv-entry-header"><span><a href="https://dm.iisc.ac.in/utsaah/">UTSAAH Lab</a> &ndash; Indian Institute of Science, Bangalore</span><span>Aug. 2022 &ndash; May 2023</span></div>
+            <div class="cv-entry-subheader"><span>Project Assistant | InsuFlo: Insulin Pump Project</span><span>Bangalore, India</span></div>
+            <ul>
+                <li>Designed 4-layer PCBs for the insulin pump, addressing signal integrity, EMI, and thermal management for Basal-Bolus operations.</li>
+                <li>Integrated Artificial Pancreatic System (APS) algorithms for communication between the pump and CGM devices.</li>
+                <li>Developed universal drivers for BME280 sensors and optimized motor control parameters for various delivery modes.</li>
+            </ul>
+        </div>
+
+        <h2 class="cv-section-title">Projects</h2>
+        <div class="cv-entry">
+            <div class="cv-entry-header"><span>On-wafer Sub-terahertz Characterization with Accuracy Evaluation (VSL &ndash; NMI)</span></div>
+            <div class="cv-entry-subheader"><span>Keywords: VNA, LCR Meter, ADS, Momentum, CST</span></div>
+            <ul>
+                <li>Simulated S-parameters of calibration standards and test structures in ADS Momentum and CST for on-wafer measurements up to 330 GHz, and compared corrected measured results against the simulated data for validation.</li>
+                <li>Developed an R-matrix probe-offset error model and validated it both experimentally, using on-wafer probe-station VNA measurements, and in simulation, by comparing against the full-wave Momentum and CST results.</li>
+                <li>Simulated S-parameters of an electro-optic modulator device and validated the probe-offset error model for it, assessing the model's applicability beyond standard calibration structures.</li>
+                <li>Extracted substrate permittivity and loss tangent from calibrated on-wafer measurements, supporting traceable S-parameter calibration across 3 frequency bands up to 110 GHz.</li>
+            </ul>
+        </div>
+        <div class="cv-entry">
+            <div class="cv-entry-header"><span>Single-Channel Microphone Localisation [<a href="https://drive.google.com/file/d/1v3izcFVgu_H1Ly6ADG3mLdYl9QtC_V_s/view?usp=sharing">link</a>]</span></div>
+            <div class="cv-entry-subheader"><span>Keywords: Audio Amplifier, STM32, MATLAB</span></div>
+            <ul>
+                <li>The solution involved echo labeling that leverages the properties of the Euclidean distance matrix (EDM) &ndash; the EDM was formed using the virtual sound sources, the actual sound source, and the unknown microphone location.</li>
+                <li>The algorithm was deployed and executed on an STM32 microcontroller.</li>
+            </ul>
+        </div>
+        <div class="cv-entry">
+            <div class="cv-entry-header"><span>Self-Balancing Robot [<a href="https://www.youtube.com/watch?v=1RK7j_e617c">link</a>]</span></div>
+            <div class="cv-entry-subheader"><span>Keywords: Control System, MATLAB</span></div>
+            <ul>
+                <li>The inverted pendulum problem was solved using the poles-and-zeros concept in MATLAB.</li>
+                <li>Employed state-space design techniques to address a multi-output system.</li>
+            </ul>
+        </div>
+
+        <h2 class="cv-section-title">Publication</h2>
+        <p>E. Easha, A. P. Khot and G. Banerjee, &ldquo;Hybrid Waveform Based Chirp Demarcation in FMCW Radar Systems,&rdquo;
+            <i>2024 IEEE Asia-Pacific Microwave Conference (APMC)</i>, Bali, Indonesia, 2024, pp. 934-936, doi:
+            <a href="https://doi.org/10.1109/APMC60911.2024.10867781">10.1109/APMC60911.2024.10867781</a>.</p>
+
+        <h2 class="cv-section-title">Awards</h2>
+        <p><strong>QuTech Academy Scholarship (2024 &ndash; 2026):</strong>
+            [<a href="https://qutechacademy.nl/a-warm-welcome-to-our-new-qutech-students/">link</a>]
+            Awarded for the two-year MSc programme at TU Delft, covering full tuition fees and providing a
+            contribution to living expenses.</p>
+
+        <h2 class="cv-section-title">Technical Skills</h2>
+        <p><strong>Languages:</strong> MATLAB (intermediate), Python (intermediate), C (intermediate), Verilog (beginner)<br>
+            <strong>Hardware:</strong> STM32, ESP32, Arduino, Raspberry Pi<br>
+            <strong>Software:</strong> CST (intermediate), ADS (intermediate), Momentum (intermediate), Cadence Virtuoso (beginner), KiCad, EAGLE, NI Multisim</p>
+    </div>
+</body>
+
+</html>
